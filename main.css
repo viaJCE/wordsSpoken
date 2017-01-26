@@ -1,0 +1,133 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+nav {
+	width: 100%;
+	position: fixed;
+	top:0;
+	left: 0;
+	z-index: 9999;
+	background-color: white;
+}
+
+nav ul {
+	float: right;
+	margin: 0;
+	margin-top: 2px;
+	margin-right: 5px;
+	padding: 5px 0;
+	list-style-type: none;
+	text-align: center;
+}
+
+nav ul li {
+	display: inline-block;
+	margin: 0;
+	padding: 10px 1px;
+}
+
+nav .header {
+	display: inline-block;
+	text-decoration: none;
+	margin: 15px 0;
+	margin-left: 5px;
+
+	font-family: 'Raleway', sans-serif;
+	font-weight: 500;
+	font-size: 1.3em;
+	color: black;
+
+	transition: all ease-out 0.3s;
+}
+
+.header:hover {
+	color: #717171;
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: rgba(113, 113, 113, 0.8);
+	font-family: 'Raleway', sans-serif;
+	font-weight: 300;
+
+	padding: 10px;
+	border: 1px solid white;
+	border-radius: 2px;
+
+	transition: all ease-out 0.3s;
+}
+
+nav ul li a:hover {
+	color: rgba(34,183,242,0.8);
+	border-color: rgba(34,183,242,0.8);
+}
+
+nav .toggle {
+	display: none;
+	float: right;
+
+	font-size: 1.1em;
+	background-color: white;
+	border: none;
+	
+	margin: 15px 0;
+	margin-right: 5px;
+}
+
+nav .toggle:focus {
+	outline: none;
+}
+
+@media screen and (max-width: 768px) {
+	nav ul {
+		display: none;
+		float: none;
+	}
+
+	nav ul li {
+		display: block;
+	}
+
+	nav .toggle {
+		display: block;
+	}
+}
+
+
+
+
+
+
+
+
+
+section {
+	padding: 60px 0;
+}
+
+#home {
+	width: 100%;
+	height: 100vh;
+
+	background: linear-gradient(
+					rgba(113, 113, 113, 0.6),
+					rgba(113, 113, 113, 0.6)
+				),
+				url(img/oliverNhen_pritchard-barrett.jpg);
+	background-size: cover;
+	background-repeat: none;
+	background-position: center center;
+	background-attachment: fixed;
+
+	padding: 0;
+}
+
+#about {}
+
+#resume {}
+
+#projects {}
+
+#contact {}
